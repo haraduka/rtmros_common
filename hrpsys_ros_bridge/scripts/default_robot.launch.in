@@ -18,6 +18,7 @@
   <arg name="USE_EMERGENCYSTOPPER" default="false" />
   <arg name="USE_REFERENCEFORCEUPDATER" default="false" />
   <arg name="USE_OBJECTCONTACTTURNAROUNDDETECTOR" default="false" />
+  <arg name="USE_THERMOESTIMATOR" default="false" />
   <include file="$(find @PROJECT_PKG_NAME@)/launch/@robot@_startup.launch" >
     <arg name="KILL_SERVERS" default="$(arg KILL_SERVERS)" />
     <arg name="NOSIM" value="$(arg NOSIM)" />
@@ -40,6 +41,7 @@
     <arg name="USE_EMERGENCYSTOPPER" default="$(arg USE_EMERGENCYSTOPPER)" />
     <arg name="USE_REFERENCEFORCEUPDATER" default="$(arg USE_REFERENCEFORCEUPDATER)" />
     <arg name="USE_OBJECTCONTACTTURNAROUNDDETECTOR" default="$(arg USE_OBJECTCONTACTTURNAROUNDDETECTOR)" />
+    <arg name="USE_THERMOESTIMATOR" default="$(arg USE_THERMOESTIMATOR)" />
     <!-- END: development -->
   </include>
 
